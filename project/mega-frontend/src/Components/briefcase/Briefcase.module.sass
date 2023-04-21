@@ -1,0 +1,132 @@
+@import "../variables"
+
+.mainInfo
+  display: flex
+  align-items: center
+  & > img
+    margin-right: 15px
+    width: 60px
+    height: 60px
+  & > p
+    font-size: 24px
+.infoItem
+  display: flex
+  margin-top: 35px
+.title
+  font-size: 18px
+  font-weight: 900
+.subtitle
+  font-weight: 300
+  font-size: 16px
+  opacity: 1
+  color: #ffffff
+  visibility: visible
+  z-index: 5
+  position: relative
+  transition: .5s
+  &h
+    opacity: 0
+    position: absolute
+    visibility: hidden
+    z-index: -99
+    transition: .5s
+input
+  background-color: #fff
+.inputHidden
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: -99
+  transition: .5s
+.inputVisible
+  opacity: 1
+  position: relative
+  visibility: visible
+  z-index: 5
+  transition: .5s
+.editBtn
+  margin-top: 35px
+.btnContainer
+  display: flex
+  justify-content: space-between
+.edit
+  &V
+    opacity: 1
+    visibility: visible
+    transform: scale(1)
+    z-index: 5
+    transition: .5s
+  &H
+    opacity: 0
+    display: none
+    visibility: hidden
+    transform: scale(0)
+    z-index: -99
+    transition: .5s
+.red
+  background-color: red
+
+.searchInput
+  margin: 0 auto
+  padding: 10px
+  display: block
+  width: 300px
+  background-color: #fff
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+.Search
+  position: relative
+  width: 300px
+  margin: 40px 0 0 0
+.searchBox
+  display: flex
+  flex-direction: column
+  position: absolute
+  width: 300px
+  height: 200px
+  overflow: auto
+  opacity: 1
+  transform: scale(1)
+  z-index: 55
+  transition: .5s
+  &-h
+    margin: 0 auto
+    width: 300px
+    height: 250px
+    display: flex
+    overflow: auto
+    transform: scale(0)
+    position: absolute
+    flex-direction: column
+    opacity: 0
+    z-index: -99
+    transition: .5s
+  &-item
+    background-color: #fff
+    padding: 10px 20px
+    display: flex
+    align-items: center
+    cursor: pointer
+    transition: .5s
+    border-bottom: 1px solid $tight-black
+    &:last-child
+      border-bottom: none
+    &:hover
+      background-color: $gray
+      transition: .5s
+    &__right
+      margin-left: 15px
+
+    &__img
+      width: 45px
+      height: 45px
+    &__title
+      font-size: 20px
+      color: $tight-black
+    &__subtitle
+      font-size: 14px
+      color: $tight-black
+      margin-top: 5px
+.price
+  margin-left: auto
+  color: $tight-black

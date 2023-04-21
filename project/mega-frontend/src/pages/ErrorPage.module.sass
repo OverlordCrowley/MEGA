@@ -1,0 +1,38 @@
+@import "../Components/variables"
+
+.errorSection
+  padding: 155px 0 100px 0
+  & > .container
+    background-color: $tight-black
+    border-radius: 25px
+    display: flex
+    justify-content: center
+    padding: 100px
+    align-items: center
+    flex-direction: column
+    min-height: 60vh
+.errorTitle
+  font-size: 35px
+  font-weight: 900
+  letter-spacing: 2px
+  color: #ffffff
+.errorImg
+  width: 200px
+  animation-duration: .25s
+  animation-name: circle
+
+.btnErr
+  background-color: #EE1111
+  margin-top: 45px
+
+@keyframes circle
+  0%
+    transform: translateX(0px)
+  25%
+    transform: translateX(-10px)
+  50%
+    transform: translateX(10px)
+  75%
+    transform: translateX(-10px)
+  100%
+    transform: translateX(0)
