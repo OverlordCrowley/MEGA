@@ -1,0 +1,133 @@
+@import "../variables"
+
+.mainInfo
+  display: flex
+  align-items: center
+  & > img
+    margin-right: 15px
+    width: 60px
+    height: 60px
+    object-fit: contain
+  & > p
+    font-size: 24px
+.infoItem
+  display: flex
+  margin-top: 35px
+.title
+  font-size: 18px
+  font-weight: 900
+.subtitle
+  font-weight: 300
+  font-size: 16px
+  opacity: 1
+  color: #ffffff
+  visibility: visible
+  z-index: 5
+  position: relative
+  transition: .5s
+  &h
+    opacity: 0
+    position: absolute
+    visibility: hidden
+    z-index: -99
+    transition: .5s
+
+.inputHidden
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: -99
+  transition: .5s
+.inputVisible
+  opacity: 1
+  width: 300px
+  position: relative
+  visibility: visible
+  border: 1px solid transparent
+  padding: 10px 10px
+  background-color: transparent
+  font-size: 16px
+  border-radius: 5px
+  color: $green
+  border: 1px solid $green
+  z-index: 5
+  transition: .5s
+.editBtn
+  margin-top: 35px
+.btnContainer
+  display: flex
+  justify-content: space-between
+.edit
+  &V
+    opacity: 1
+    visibility: visible
+    transform: scale(1)
+    z-index: 5
+    transition: .5s
+  &H
+    opacity: 0
+    display: none
+    visibility: hidden
+    transform: scale(0)
+    z-index: -99
+    transition: .5s
+.red
+  background-color: red
+
+.inputs
+  border: 1px solid transparent
+  padding: 20px 10px
+  width: 150px
+  background-color: transparent
+  font-size: 16px
+  border-radius: 5px
+  color: #00C46B
+
+
+
+
+.infoItemActive
+  display: flex
+  flex-direction: column
+
+.inactive
+  display: flex
+  align-items: center
+  flex-direction: row
+
+
+#form-file-upload
+  height: 16rem
+  width: 28rem
+  max-width: 100%
+  text-align: center
+  position: relative
+
+
+#input-file-upload
+  display: none
+
+
+#label-file-upload
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-width: 2px
+  border-radius: 1rem
+  border-style: dashed
+  border-color: #cbd5e1
+  background-color: #f8fafc
+
+
+.upload-button
+  cursor: pointer
+  padding: 0.25rem
+  font-size: 1rem
+  border: none
+  font-family: 'Oswald', sans-serif
+  background-color: transparent
+
+
+.upload-button:hover
+  text-decoration-line: underline
